@@ -107,7 +107,11 @@ function App() {
   return (
     <ColorModeContextProvider>
       <CssBaseline />
-      <GlobalStyles styles={{ html: { WebkitFontSmoothing: "auto" } }} />
+      <GlobalStyles
+        styles={{
+          html: { WebkitFontSmoothing: "auto" },
+        }}
+      />
       <RefineSnackbarProvider>
         <Refine
           dataProvider={dataProvider("https://api.fake-rest.refine.dev")}
