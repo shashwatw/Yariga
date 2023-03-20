@@ -31,7 +31,7 @@ const CreateProperty = () => {
   const onFinishHandler = async (data: FieldValues) => {
     if (!propertyImage.name) return alert("Please select an image");
 
-    await onFinish({ ...data, image: propertyImage.url, email: user.email });
+    await onFinish({ ...data, photo: propertyImage.url, email: user.email });
   };
 
   return (
@@ -41,9 +41,9 @@ const CreateProperty = () => {
       onFinish={onFinish}
       formLoading={formLoading}
       handleSubmit={handleSubmit}
-      propertyImage={propertyImage}
-      onFinishHandler={onFinishHandler}
       handleImageChange={handleImageChange}
+      onFinishHandler={onFinishHandler}
+      propertyImage={propertyImage}
     />
   );
 };

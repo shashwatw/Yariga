@@ -16,8 +16,8 @@ app.get("/", (req, res) => {
   res.send("Hello World!");
 });
 
-app.use("/api/users", userRouter);
-app.use("/api/properties", propertyRouter);
+app.use("/api/v1/users", userRouter);
+app.use("/api/v1/properties", propertyRouter);
 
 const startServer = async () => {
   try {

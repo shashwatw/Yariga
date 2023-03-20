@@ -10,7 +10,7 @@ const AllProperties = () => {
   return (
     <Box>
       <Stack direction="row" justifyContent="space-between" alignItems="center">
-        <Typography fontSize={25} fontWeight={700} color="#11142d">
+        <Typography fontSize={25} fontWeight={700} color="#fcfcfc">
           All Properties
         </Typography>
         <CustomButton
