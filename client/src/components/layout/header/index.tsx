@@ -24,7 +24,7 @@ export const Header: React.FC = () => {
       position="sticky"
       elevation={0}
       sx={{
-        background: "#fcfcfc",
+        background: "#212121",
       }}
     >
       <Toolbar>
