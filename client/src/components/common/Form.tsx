@@ -287,6 +287,13 @@ const Form = ({
             Enter property name
           </FormHelperText>
           <TextField
+            sx={{
+              "& .MuiInputLabel-root": { color: "green" }, //styles the label
+              "& .MuiOutlinedInput-root": {
+                "& > fieldset": { borderColor: "gray" },
+              },
+            }}
+            inputProps={{ style: { color: "grey" } }}
             fullWidth
             required
             id="outlined-basic"
@@ -338,6 +345,10 @@ const Form = ({
               Enter property type
             </FormHelperText>
             <Select
+              sx={{
+                border: "0.1px solid #c2c2c2",
+                color: "#757575",
+              }}
               variant="outlined"
               color="info"
               displayEmpty
@@ -369,6 +380,13 @@ const Form = ({
               Enter property price
             </FormHelperText>
             <TextField
+              inputProps={{ style: { color: "grey", border: "grey" } }}
+              sx={{
+                "& .MuiInputLabel-root": { color: "green" }, //styles the label
+                "& .MuiOutlinedInput-root": {
+                  "& > fieldset": { borderColor: "gray" },
+                },
+              }}
               fullWidth
               required
               id="outlined-basic"
@@ -392,6 +410,13 @@ const Form = ({
             Enter location
           </FormHelperText>
           <TextField
+            sx={{
+              "& .MuiInputLabel-root": { color: "green" }, //styles the label
+              "& .MuiOutlinedInput-root": {
+                "& > fieldset": { borderColor: "gray" },
+              },
+            }}
+            inputProps={{ style: { color: "grey" } }}
             fullWidth
             required
             id="outlined-basic"
