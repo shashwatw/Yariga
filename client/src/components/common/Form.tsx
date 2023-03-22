@@ -260,11 +260,11 @@ const Form = ({
   propertyImage,
 }: FormProps) => (
   <Box>
-    <Typography fontSize={25} fontWeight={700} color="#11142D">
+    <Typography fontSize={25} fontWeight={700} color="#ffffff">
       {type} a Property
     </Typography>
 
-    <Box mt={2.5} borderRadius="15px" padding="20px" bgcolor="#FCFCFC">
+    <Box mt={2.5} borderRadius="15px" padding="20px" bgcolor="#292929">
       <form
         style={{
           marginTop: "20px",
@@ -278,10 +278,10 @@ const Form = ({
         <FormControl>
           <FormHelperText
             sx={{
-              fontWeight: 500,
               margin: "10px 0",
               fontSize: 16,
-              color: "#11142D",
+              fontWeight: 700,
+              color: "#70a6ff",
             }}
           >
             Enter property name
@@ -306,10 +306,10 @@ const Form = ({
         <FormControl>
           <FormHelperText
             sx={{
-              fontWeight: 500,
               margin: "10px 0",
               fontSize: 16,
-              color: "#11142D",
+              fontWeight: 700,
+              color: "#70a6ff",
             }}
           >
             Property Description
@@ -318,12 +318,14 @@ const Form = ({
             minRows={5}
             required
             placeholder="Write description of property"
+            id="outlined-basic"
             color="info"
+            variant="outlined"
             style={{
               width: "100%",
               background: "transparent",
               fontSize: "16px",
-              borderColor: "rgba(0, 0, 0, 0.23)",
+              borderColor: "#808080",
               borderRadius: 6,
               padding: 10,
               color: "#919191",
@@ -336,10 +338,10 @@ const Form = ({
           <FormControl sx={{ flex: 1 }}>
             <FormHelperText
               sx={{
-                fontWeight: 500,
                 margin: "10px 0",
                 fontSize: 16,
-                color: "#11142D",
+                fontWeight: 700,
+                color: "#70a6ff",
               }}
             >
               Enter property type
@@ -371,10 +373,10 @@ const Form = ({
           <FormControl sx={{ flex: 1 }}>
             <FormHelperText
               sx={{
-                fontWeight: 500,
                 margin: "10px 0",
                 fontSize: 16,
-                color: "#11142D",
+                fontWeight: 700,
+                color: "#70a6ff",
               }}
             >
               Enter property price
@@ -401,10 +403,10 @@ const Form = ({
         <FormControl>
           <FormHelperText
             sx={{
-              fontWeight: 500,
               margin: "10px 0",
               fontSize: 16,
-              color: "#11142D",
+              fontWeight: 700,
+              color: "#70a6ff",
             }}
           >
             Enter location
@@ -429,9 +431,9 @@ const Form = ({
         <Stack direction="column" gap={1} justifyContent="center" mb={2}>
           <Stack direction="row" gap={2}>
             <Typography
-              color="#11142D"
+              color="#70a6ff"
               fontSize={16}
-              fontWeight={500}
+              fontWeight={700}
               my="10px"
             >
               Property Photo
