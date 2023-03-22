@@ -56,7 +56,7 @@ const AllProperties = () => {
     <Box>
       <Box mt="20px" sx={{ display: "flex", flexWrap: "wrap", gap: 3 }}>
         <Stack direction="column" width="100%">
-          <Typography fontSize={25} fontWeight={700} color="#fcfcfc">
+          <Typography fontSize={25} fontWeight={700} color="#a9aaba">
             {!allProperties.length
               ? "There are no properties yet."
               : "All Properties"}
@@ -98,6 +98,7 @@ const AllProperties = () => {
                   ]);
                 }}
               />
+
               <Select
                 variant="outlined"
                 color="info"
@@ -128,20 +129,22 @@ const AllProperties = () => {
                   )
                 )}
               </Select>
+              <Stack
+                direction="row"
+                justifyContent="space-between"
+                alignItems="center"
+              ></Stack>
+              <CustomButton
+                title="Add Property"
+                handleClick={() => navigate("/properties/create")}
+                backgroundColor="#475be8"
+                color="#fcfcfc"
+                icon={<Add />}
+              />
             </Box>
           </Box>
         </Stack>
       </Box>
-
-      <Stack direction="row" justifyContent="space-between" alignItems="center">
-        <CustomButton
-          title="Add Property"
-          handleClick={() => navigate("/properties/create")}
-          backgroundColor="#475be8"
-          color="#fcfcfc"
-          icon={<Add />}
-        />
-      </Stack>
 
       <Box mt="20px" sx={{ display: "flex", flexWrap: "wrap", gap: 3 }}>
         {allProperties.map((property) => (

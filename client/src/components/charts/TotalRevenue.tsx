@@ -7,7 +7,7 @@ const TotalRevenue = () => {
   return (
     <Box
       p={4}
-      bgcolor="#fcfcfc"
+      bgcolor="#6d6d6d"
       id="chart"
       flex={1}
       display="flex"
@@ -26,14 +26,14 @@ const TotalRevenue = () => {
           <ArrowCircleUpRounded
             sx={{
               fontSize: 25,
-              color: "#475be8",
+              color: "#cfc8ff",
             }}
           />
           <Stack>
-            <Typography fontSize={15} color="#475be8">
+            <Typography fontSize={15} color="#cfc8ff">
               0.8%
             </Typography>
-            <Typography fontSize={12} color="#808191">
+            <Typography fontSize={12} color="#11142D">
               Than Last Month
             </Typography>
           </Stack>

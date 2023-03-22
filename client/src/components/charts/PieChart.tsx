@@ -9,7 +9,7 @@ const PieChart = ({ title, value, series, colors }: PieChartProps) => {
       id="chart"
       flex={1}
       display="flex"
-      bgcolor="#fcfcfc"
+      bgcolor="#6d6d6d"
       alignItems="center"
       flexDirection="row"
       justifyContent="space-between"
@@ -21,7 +21,7 @@ const PieChart = ({ title, value, series, colors }: PieChartProps) => {
       width="fit-content"
     >
       <Stack direction="column">
-        <Typography fontSize={14} color="#808191">
+        <Typography fontSize={14} color="#cfc8ff">
           {title}
         </Typography>
         <Typography fontSize={24} color="#11142D" fontWeight={700} mt={1}>

@@ -54,7 +54,7 @@ const PropertyDetails = () => {
       bgcolor="#292929"
       width="fit-content"
     >
-      <Typography fontSize={25} fontWeight={700} color="#ffffff">
+      <Typography fontSize={25} fontWeight={700} color="#a9aaba">
         Details
       </Typography>
 

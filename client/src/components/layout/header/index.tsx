@@ -50,7 +50,7 @@ export const Header: React.FC = () => {
             justifyContent="center"
           >
             {user?.name ? (
-              <Typography color="gray" variant="subtitle2">
+              <Typography color="#a9aaba" variant="subtitle2">
                 {user?.name}
               </Typography>
             ) : null}
